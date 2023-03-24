@@ -8,5 +8,8 @@ namespace ProjectGenerator
 {
     internal class VanillaWebProjectGen
     {
+        public void folderFileGen() { 
+            
+        }
     }
 }
