@@ -2,7 +2,7 @@
   "profiles": {
     "ProjectGenerator": {
       "commandName": "Project",
-      "commandLineArgs": "vanilla-web"
+      "commandLineArgs": "vanilla-web lift.it-mvp"
     }
   }
 }
