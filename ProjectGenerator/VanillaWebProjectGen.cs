@@ -25,8 +25,6 @@ namespace ProjectGenerator
             string assetsSubFolder = Path.Combine(documents, "Repos", projectName, assetsFolderName); ;
             string jsSubFolder = Path.Combine(documents, "Repos", projectName, jsFolderName); ;
             string cssSubFolder = Path.Combine(documents, "Repos", projectName, cssFolderName);
-            string indexFileName = $"ProjectGenerator{Path.DirectorySeparatorChar}Templates{Path.DirectorySeparatorChar}indexTemplate.html";
-            string cssFileName = $"ProjectGenerator{Path.DirectorySeparatorChar}Templates{Path.DirectorySeparatorChar}resetTemplate.css";
 
             Directory.CreateDirectory(projectFolder);
             Directory.CreateDirectory(assetsSubFolder);
