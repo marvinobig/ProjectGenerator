@@ -33,24 +33,23 @@ try
         folderFileGen(projectName);
     }
 
-    Console.Write("\n");
     seperator();
+    Console.ReadLine();
 }
 catch (ArgumentException e)
 {
-    Console.WriteLine($"Error: {e.GetType()}");
-    Console.WriteLine($"Message: {e.Message}");
+    errors(e);
 }
 catch (Exception e)
 {
-    Console.WriteLine($"Error: {e.GetType()}");
-    Console.WriteLine($"Message: {e.Message}");
+    errors(e);
 }
 
 
 void seperator()
 {
     int separatorCount = 100;
+    Console.Write("\n");
 
     for (int i = 0; i <= separatorCount; i++)
     {
@@ -61,4 +60,12 @@ void seperator()
             Console.WriteLine("\n");
         }
     }
+}
+
+void errors(Exception e)
+{
+    Console.WriteLine($"Error: {e.GetType()}");
+    Console.WriteLine($"Message: {e.Message}");
+    seperator();
+    Console.ReadLine();
 }
